@@ -68,7 +68,7 @@ function App() {
   useEffect(() => {
       if (mainPage) {
         setMainPageDisplay (
-    
+    /*
             <div>
               
             <div className='bg-gray-800 h-auto w-full fixed flex flex-row gap-60 z-10'>
@@ -82,9 +82,7 @@ function App() {
             </ul>
           
             </div>
-            
-            
-        
+           
             
           <div className=' absolute bg-gradient-to-r from-cyan-700 to-blue-700 h-max w-full z-0 flex  flex-col'>
             <div>hi</div>
@@ -115,7 +113,7 @@ function App() {
               </div>
               <img className='w-1/5 px-10 h-96 rounded-lg' src={adhd2}></img>
             </div>
-            
+            */
             <div className='flex justify-center items-center mt-10 mb-36'>
               <h1 className='text-5xl text-white font-bold'>"What you stay focused on will grow" -Roy T. Bennett</h1>
             </div>
@@ -154,7 +152,7 @@ function App() {
           </div>
           </div>
           </div>
-          
+          /*
           <div className=' flex flex-col justify-center items-center my-96 gap-3'>
             <h1 className='text-7xl text-white font-semibold'>Contact Us</h1>
             <h2 className='text-2xl text-white'>Tel no.: +65 91370372</h2>
@@ -162,7 +160,7 @@ function App() {
             
             <h2 className='text-white'> For any enquires please contact us. Thank you!!!😊</h2>
           </div>
-
+*/
           </div>
 
           </div>
