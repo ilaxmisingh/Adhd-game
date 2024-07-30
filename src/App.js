@@ -68,7 +68,7 @@ function App() {
   useEffect(() => {
       if (mainPage) {
         setMainPageDisplay (
-    /*
+    
             <div>
               
             <div className='bg-gray-800 h-auto w-full fixed flex flex-row gap-60 z-10'>
@@ -152,7 +152,7 @@ function App() {
           </div>
           </div>
           </div>
-          /*
+          
           <div className=' flex flex-col justify-center items-center my-96 gap-3'>
             <h1 className='text-7xl text-white font-semibold'>Contact Us</h1>
             <h2 className='text-2xl text-white'>Tel no.: +65 91370372</h2>
