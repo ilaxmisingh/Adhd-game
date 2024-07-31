@@ -19,11 +19,17 @@ const useCountdown = (targetDate) => {
 };
 
 const getReturnValues = (countDown) => {
-  // calculate time left
-  const minutes = Math.floor((countDown % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((countDown % (1000 * 60)) / 1000);
+  // Ensure countDown is not negative
+  countDown = Math.max(countDown, 0);
+
+  // Calculate seconds remaining, capping at 10 seconds
+  const seconds = Math.floor(countDown / 1000) % 10;
+
+  // Set minutes to 0 for time <= 10 seconds
+  const minutes = 0;
 
   return [minutes, seconds];
 };
+
 
 export { useCountdown, getReturnValues };
