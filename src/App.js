@@ -64,114 +64,54 @@ function App() {
   function scrollContact() {
     window.scrollTo(0, 30000);
   }
-  
   useEffect(() => {
-      if (mainPage) {
-        setMainPageDisplay (
-    
-            <div>
-              
-            <div className='bg-gray-800 h-auto w-full fixed flex flex-row gap-60 z-10'>
-            <button className=' m-8 text-4xl font-bold text-white   '  onClick={scrollHome}>ADHD Mind Games</button>
-            
-            <ul className=' m-8 flex flex-row text-4xl gap-16 text-white font-medium'>
-                <button className='hover:bg-sky-500 rounded-lg w-32 ' onClick={scrollHome}>Home</button>
-                <button className='hover:bg-sky-500 rounded-lg w-32 ' onClick={scrollAbout}>About</button>
-                <button className='hover:bg-sky-500 rounded-lg w-32 ' onClick={scrollGame}>Games</button>
-                <button className='hover:bg-sky-500 rounded-lg w-32 ' onClick={scrollContact}>Contact</button>
-            </ul>
-          
+    if (mainPage) {
+      setMainPageDisplay(
+        <div>
+          <div className='relative bg-gradient-to-r from-cyan-700 to-blue-700 min-h-screen w-full flex flex-col items-center'>
+            <div className='flex flex-col justify-center items-center py-12'>
+              <h1 className='text-5xl text-white uppercase font-bold mb-2 text-center'>
+                Welcome to the ADHD Mind Works
+              </h1>
+              <h2 className='text-3xl text-white uppercase font-semibold text-center'>
+                Time to Study Hard and Play Hard
+              </h2>
             </div>
-           
-            
-          <div className=' absolute bg-gradient-to-r from-cyan-700 to-blue-700 h-max w-full z-0 flex  flex-col'>
-            <div>hi</div>
-            <div className='flex flex-col justify-center items-center my-96 '>
-              
-            <h1 className='text-7xl text-white uppercase font-bold'> Welcome to the ADHD Mind Works </h1>
-            <h2 className='text-4xl text-white my-5 uppercase font-semibold'>Time to Study Hard and Play Hard</h2>
-            
-            </div>
-
-            
-            <div className='flex justify-center items-center mt-36 mb-10'>
-            
-              <div className='w-1/2 h-auto'>
-                <h1 className='text-5xl text-white font-semibold'>About Us:</h1>
-              <h2 className='text-3xl text-white'>We are a group of Temasek Polytechnic students in our Year 3 studying in Business Process and Systems Engineering. Our mission and goal in creating a game website is to help ADHD students to study better by engaging the user and improving their attention span by using gamification. The team plans to create a website that features interactive games that will motivate and engage ADHD students while making them competitive to boost their focus and improving their social skills.</h2>
-              
-              </div>
-              <img className='w-1/5 px-10 h-96 rounded-lg' src={adhd}></img>
-            </div>
-
-            <div className='flex justify-center items-center mb-36 mt-10'>
-            
-              <div className='w-1/2 h-auto'>
-                <h1 className='text-5xl text-white font-semibold'>Objectives:</h1>
-              <h2 className='text-3xl text-white'>Our team plans to provide another alternative for parents having children with ADHD. It is known that medication is one of the best methods of help for a student with ADHD. However, medication could be expensive and have many side effects. Therefore, our gamification method is free and effective in improving ADHD students’ attention span and motivation to learn.</h2>
-              
-              </div>
-              <img className='w-1/5 px-10 h-96 rounded-lg' src={adhd2}></img>
-            </div>
-            */
-            <div className='flex justify-center items-center mt-10 mb-36'>
-              <h1 className='text-5xl text-white font-bold'>"What you stay focused on will grow" -Roy T. Bennett</h1>
-            </div>
-
-            <div className='flex  justify-center items-center mt-40 '>
-          <div className='border border-black w-max border-2'>
-            <div className='flex flex-col justify-center items-center gap-20 '>
-          <div className='mt-10'>
-          <h1 className='text-5xl text-white'>Click the icons to play!</h1>
-          </div>
-          
-          <div className='flex flex-row gap-20 mx-20 mb-20'>
-          <div className=''>
-          
-          <button className='border border-black rounded-lg shadow-2xl bg-red-600 px-9 py-3 text-center my-3 text-white w-44 h-48 ml-28 ' onClick={clickrabbitHome}><img src={rabbit}   /></button>
-          <div>
-          <div className='bg-slate-700 w-full h-full p-10'>
-            
-          <h1 className='text-3xl text-white pb-2'> Game 1: </h1>
-          <h1 className='text-2xl text-white'>🥕Save Sergeant Carrots🐇</h1>
-          </div>
-          </div>
-          </div>
-
-          <div className=''>
-          <button className='border border-black rounded-lg shadow-2xl bg-red-600 px-1 py-1 text-center my-3 text-white w-44 h-48 ml-16' onClick={click2}> <img src={crown}    /></button>
-          <div className=''>
-          <div className='bg-slate-700 w-full h-full p-10 '>
-          
-          <h1 className='text-3xl text-white pb-2'> Game 2:</h1>
-          <h1 className='text-2xl text-white'>👑 MindMap King 👑</h1>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          
-          <div className=' flex flex-col justify-center items-center my-96 gap-3'>
-            <h1 className='text-7xl text-white font-semibold'>Contact Us</h1>
-            <h2 className='text-2xl text-white'>Tel no.: +65 91370372</h2>
-            <h2 className='text-2xl text-white'>Email Us : ADHDMindWorks@gmail.com</h2>
-            
-            <h2 className='text-white'> For any enquires please contact us. Thank you!!!😊</h2>
-          </div>
-*/
-          </div>
-
-          </div>
-    
-        )
-      }
-      else {
-        setMainPageDisplay(null)
-      }
-  }, [mainPage])
   
+            <div className='flex flex-col justify-center items-center mt-8 mb-16'>
+              <h1 className='text-4xl text-white mb-4'>Click the icons to play!</h1>
+              <div className='flex flex-row gap-16 mx-10'>
+                <div className='flex flex-col items-center'>
+                  <button className='border border-black rounded-lg shadow-2xl bg-red-600 px-6 py-3 text-center text-white w-44 h-44 mb-4' onClick={clickrabbitHome}>
+                    <img src={rabbit} alt='Rabbit Icon' className='w-full h-full object-cover' />
+                  </button>
+                  <div className='bg-slate-700 w-full p-6'>
+                    <h1 className='text-3xl text-white pb-2'>Game 1:</h1>
+                    <h2 className='text-2xl text-white'>🥕Save Sergeant Carrots🐇</h2>
+                  </div>
+                </div>
+  
+                <div className='flex flex-col items-center'>
+                  <button className='border border-black rounded-lg shadow-2xl bg-red-600 px-6 py-3 text-center text-white w-44 h-44 mb-4' onClick={click2}>
+                    <img src={crown} alt='Crown Icon' className='w-full h-full object-cover' />
+                  </button>
+                  <div className='bg-slate-700 w-full p-6'>
+                    <h1 className='text-3xl text-white pb-2'>Game 2:</h1>
+                    <h2 className='text-2xl text-white'>👑 MindMap King 👑</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    } else {
+      setMainPageDisplay(null);
+    }
+  }, [mainPage]);
+  
+
+
 
   function clickrabbitHome() {
     setMainPage(false)
@@ -204,37 +144,33 @@ function App() {
   }
 
   useEffect(() => {
-    if (rabbitHome) {
-      setrabbitHomeDisplay (
-        <div className="antialised bg-gradient-to-r from-purple-400 to-blue-500 h-full">
-          <div className='flex justify-center items-center gap-8'>
-          <button className='bg-fuchsia-600 mt-5 border border-violet-700 rounded-lg shadow-lg text-5xl text-white px-9 py-3 text-center' onClick={clickrabbitGamep3} > Primary 3</button>
-          <button className='bg-fuchsia-600 mt-5 border border-violet-700 rounded-lg shadow-lg text-5xl text-white px-9 py-3 text-center' onClick={clickrabbitGame} > Primary 4</button>
-          <button className='bg-fuchsia-600 mt-5 border border-violet-700 rounded-lg shadow-lg text-5xl text-white px-9 py-3 text-center' onClick={clickrabbitGamep5}> Primary 5</button>
-          <button className='bg-fuchsia-600 mt-5 border border-violet-700 rounded-lg shadow-lg text-5xl text-white px-9 py-3 text-center' onClick={clickrabbitGamep6}> Primary 6</button>
+  if (rabbitHome) {
+    setrabbitHomeDisplay(
+      <div className="antialiased bg-gradient-to-r from-purple-400 to-blue-500 min-h-screen flex flex-col justify-between">
+        <div className='flex flex-col items-center py-8'>
+          <div className='flex justify-center items-center gap-4 mb-8'>
+            <button className='bg-fuchsia-600 border border-violet-700 rounded-lg shadow-lg text-4xl text-white px-6 py-3 text-center' onClick={clickrabbitGamep3}>Primary 3</button>
+            <button className='bg-fuchsia-600 border border-violet-700 rounded-lg shadow-lg text-4xl text-white px-6 py-3 text-center' onClick={clickrabbitGame}>Primary 4</button>
+            <button className='bg-fuchsia-600 border border-violet-700 rounded-lg shadow-lg text-4xl text-white px-6 py-3 text-center' onClick={clickrabbitGamep5}>Primary 5</button>
+            <button className='bg-fuchsia-600 border border-violet-700 rounded-lg shadow-lg text-4xl text-white px-6 py-3 text-center' onClick={clickrabbitGamep6}>Primary 6</button>
           </div>
-          <div className='flex flex-col h-3/4 justify-center items-center gap-5'>
-          <h1 className='text-9xl text-white mt-36'> 🥕Save Sergant Carrots💀 </h1>
-          <div className="flex flex-row gap-96 mt-36" >
-                    <img className="w-40" src={rabbit} alt="rabbit" />
-                    
-                    <img className="w-40" src={wolf} alt="wolf" />
-          
-                    
+          <div className='flex flex-col justify-center items-center gap-6 mb-8'>
+            <h1 className='text-6xl text-white mb-6'>🥕Save Sergeant Carrots💀</h1>
+            <div className="flex flex-row gap-12">
+              <img className="w-32 h-auto" src={rabbit} alt="rabbit" />
+              <img className="w-32 h-auto" src={wolf} alt="wolf" />
+            </div>
           </div>
-          </div>
-          <div className='flex justify-center items-center'>
-          <button className='border border-black rounded-lg shadow-lg bg-red-700 px-9 py-3 mb-32 mt-9 text-center text-neutral-100 text-5xl' onClick={clickMainPage1} > 🏠 </button>
-          </div>
-          
-          
         </div>
-      ) 
-    } else {
-      setrabbitHomeDisplay(null)
-    }
-  }, [rabbitHome])
-
+        <div className='flex justify-center items-center mb-8'>
+          <button className='border border-black rounded-lg shadow-lg bg-red-700 px-8 py-3 mb-8 text-center text-neutral-100 text-4xl' onClick={clickMainPage1}>🏠</button>
+        </div>
+      </div>
+    )
+  } else {
+    setrabbitHomeDisplay(null)
+  }
+}, [rabbitHome])
 
 
 
